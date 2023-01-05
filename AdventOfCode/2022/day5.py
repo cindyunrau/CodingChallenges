@@ -48,8 +48,6 @@ def main(argv):
                 stacks[i].insert(0,row[stackIndices[i]])
                 stacks2[i].insert(0,row[stackIndices[i]])
 
-
-    
     for lineNum, line in enumerate(file):
         if(lineNum != 0):
             line = re.sub("move|from|to","",line.strip()).split()
