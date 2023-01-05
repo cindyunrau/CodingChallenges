@@ -57,7 +57,7 @@ def calcRoundMove(outcome, opponent):
 
 def main(argv):
     if(len(argv)!=2):
-        print("Incorrect number of arguments given, 1 expected,", len(argv), "given.")
+        print("Incorrect number of arguments given, 2 expected,", len(argv), "given.")
         print("Usage: python day2.py [filename] [partNum]")
         sys.exit()
 
@@ -74,7 +74,7 @@ def main(argv):
         moves = line.strip().split(' ',1)
 
         if moves[0] not in validOpponentMoves or moves[1] not in validPlayerMoves:
-            print("Invalid characters in file. Line #",lineNum)
+            print("Invalid characters in file. Line #",lineNum+1)
             sys.exit()
 
         if(partNum == 1):
