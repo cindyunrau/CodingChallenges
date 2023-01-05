@@ -4,7 +4,7 @@ import sys
 
 def main(argv):
     if(len(argv)!=2):
-        print("Incorrect number of arguments given, 1 expected,", len(argv), "given.")
+        print("Incorrect number of arguments given, 2 expected,", len(argv), "given.")
         print("Usage: python day1.py [filename] [numElves]")
         sys.exit()
 
@@ -31,7 +31,7 @@ def main(argv):
             try:
                 currCal += int(line)
             except ValueError:
-                print("Invalid characters in file. Line #",lineNum)
+                print("Invalid characters in file. Line #",lineNum+1)
                 sys.exit()
 
     if currCal > maxCal[0]:
