@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import sys
-import re
 
 def main(argv):
     if(len(argv)!=1):
